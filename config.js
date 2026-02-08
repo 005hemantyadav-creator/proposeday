@@ -73,11 +73,11 @@ const CONFIG = {
     //    textColor: "#ff4757"             // Text color (make sure it's readable!)
     // },
     colors: {
-        backgroundStart: "#ff9a9e",
-        backgroundEnd: "#fad0c4",
-        buttonBackground: "#ff4d6d",
-        buttonHover: "#ff758f",
-        textColor: "#ffffff"
+        backgroundStart: "#ffafbd",
+        backgroundEnd: "#ffc3a0",
+        buttonBackground: "#ff6b6b",
+        buttonHover: "#ff8787",
+        textColor: "#ff4757"
     },
 
     // Animation settings
