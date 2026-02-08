@@ -21,9 +21,9 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', Arial, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;   /* 🔥 this removes scroll safely */
   position: relative;
-}
+
 
 /* Blurred Background Layer */
 body::before {
@@ -62,7 +62,7 @@ body::after {
     width: 90%;
     max-width: 550px;
 
-    margin: 20px auto;
+    margin: 10px auto;
 
     position: relative;
     z-index: 2;
@@ -315,17 +315,14 @@ h2 {
   max-width: 320px;
   height: auto;
   border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   display: block;
   margin: 0 auto;
+
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.25),
+    0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .portrait-image:hover {
   transform: scale(1.03);
 }
-
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-}
-
