@@ -16,12 +16,12 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;          /* fixed height instead of min-height */
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', Arial, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;       /* remove vertical scroll */
   position: relative;
 }
 
@@ -32,7 +32,6 @@ body::before {
   inset: 0;
   background: url('love-portrait.jpg') 50% 30% / cover no-repeat;
   filter: blur(18px) brightness(0.75);
-  transform: scale(1.1);
   z-index: -2;
 }
 
@@ -323,11 +322,4 @@ h2 {
 
 .portrait-image:hover {
   transform: scale(1.03);
-}
-
-
-/* ===== Container Glass Effect ===== */
-.container {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.85);
 }
