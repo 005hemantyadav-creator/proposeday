@@ -202,7 +202,6 @@ function createHeartExplosion() {
     }
 }
 
-// Music
 function setupMusicPlayer() {
     const musicControls = document.getElementById('musicControls');
     const musicToggle = document.getElementById('musicToggle');
@@ -218,6 +217,20 @@ function setupMusicPlayer() {
     bgMusic.volume = config.music.volume || 0.5;
     bgMusic.load();
 
+    // 👇 Start music on first user interaction anywhere
+    const startMusicOnFirstClick = () => {
+        bgMusic.play().then(() => {
+            window.appState.setState({ isMusicPlaying: true });
+        }).catch(err => {
+            console.log("Autoplay blocked:", err);
+        });
+
+        document.removeEventListener('click', startMusicOnFirstClick);
+    };
+
+    document.addEventListener('click', startMusicOnFirstClick);
+
+    // Manual toggle button still works
     musicToggle.addEventListener('click', () => {
         if (bgMusic.paused) {
             bgMusic.play();
