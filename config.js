@@ -20,33 +20,33 @@ const CONFIG = {
 
     // Questions and answers
     // Customize each question and its possible responses
-    questions: [
-    {
+    questions: {
+    first: {
         type: "choice",
         text: "Be honest… do you still get butterflies when you see me? 🦋❤️",
         yesBtn: "Every single time",
-        noBtn: "Maybe…"
-    },
-    {
+        noBtn: "Maybe…" 
+        },
+    second: { 
         type: "choice",
         text: "Be honest… do you just like me? 😏❤️",
         yesBtn: "Yes",
         noBtn: "No",
-        secretAnswer: "I don't like you, I love you! ❤️"
-    },
-    {
+        secretAnswer: "I don't like you, I love you! ❤️" 
+        },
+    third: {  
         type: "slider",
         text: "How much do you love me?",
         startText: "This much!",
-        nextBtn: "Next ❤️"
-    },
-    {
+        nextBtn: "Next ❤️" 
+        },
+    fourth: { 
         type: "final",
         text: "Will you be my Valentine on February 14th, 2026? 🌹",
         yesBtn: "Yes!",
-        noBtn: "No"
-    }
-],
+        noBtn: "No" 
+        }
+},
 
     // Love meter messages
     // They show up depending on how far they slide the meter
