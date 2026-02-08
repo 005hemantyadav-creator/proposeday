@@ -30,7 +30,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url('love-portrait.jpg') 50% 28% / cover no-repeat;
+  background: url('love-portrait.jpg') 50% 29% / cover no-repeat;
   filter: blur(18px) brightness(0.75);
   z-index: -2;
 }
