@@ -15,14 +15,38 @@
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
-    font-family: 'Poppins', Arial, sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Blurred Background Layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('love-portrait.jpg') center/cover no-repeat;
+  filter: blur(18px) brightness(0.7);
+  transform: scale(1.1);
+  z-index: -2;
+}
+
+/* Soft romantic overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 175, 189, 0.4),
+    rgba(255, 195, 160, 0.4)
+  );
+  z-index: -1;
 }
 
 .container {
