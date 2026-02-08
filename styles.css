@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   overflow-x: hidden;
   position: relative;
-  padding: 40px 0;   /* gives breathing space top/bottom */
+  padding: 20px 0;   /* gives breathing space top/bottom */
 }
 
 /* Blurred Background Layer */
@@ -50,7 +50,7 @@ body::after {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
 
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 
@@ -242,8 +242,8 @@ h2 {
 }
 
 .share-container {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -291,7 +291,7 @@ h2 {
 
 /* ===== Portrait Styling ===== */
 .portrait-wrapper {
-  margin: 15px auto 25px auto;
+  margin: 10px auto 20px auto;
   text-align: center;
   max-width: 100%;
   overflow: hidden;
